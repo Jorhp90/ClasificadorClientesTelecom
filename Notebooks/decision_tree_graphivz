@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Contract_Month-to-month &le; 0.5<br/>entropy = 0.835<br/>samples = 4930<br/>value = [3620, 1310]<br/>class = non-churners>, fillcolor="#eeaf81"] ;
+1 [label=<InternetService_Fiber optic &le; 0.5<br/>entropy = 0.358<br/>samples = 2194<br/>value = [2045, 149]<br/>class = non-churners>, fillcolor="#e78a47"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Contract_Two year &le; 0.5<br/>entropy = 0.224<br/>samples = 1527<br/>value = [1472, 55]<br/>class = non-churners>, fillcolor="#e68640"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.352<br/>samples = 648<br/>value = [605, 43]<br/>class = non-churners>, fillcolor="#e78a47"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.104<br/>samples = 879<br/>value = [867, 12]<br/>class = non-churners>, fillcolor="#e5833c"] ;
+2 -> 4 ;
+5 [label=<tenure &le; 71.5<br/>entropy = 0.587<br/>samples = 667<br/>value = [573, 94]<br/>class = non-churners>, fillcolor="#e99659"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.645<br/>samples = 566<br/>value = [473, 93]<br/>class = non-churners>, fillcolor="#ea9a60"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.08<br/>samples = 101<br/>value = [100, 1]<br/>class = non-churners>, fillcolor="#e5823b"] ;
+5 -> 7 ;
+8 [label=<InternetService_Fiber optic &le; 0.5<br/>entropy = 0.983<br/>samples = 2736<br/>value = [1575, 1161]<br/>class = non-churners>, fillcolor="#f8decb"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<tenure &le; 5.5<br/>entropy = 0.858<br/>samples = 1251<br/>value = [898, 353]<br/>class = non-churners>, fillcolor="#efb387"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.984<br/>samples = 523<br/>value = [300, 223]<br/>class = non-churners>, fillcolor="#f8dfcc"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.677<br/>samples = 728<br/>value = [598, 130]<br/>class = non-churners>, fillcolor="#eb9c64"] ;
+9 -> 11 ;
+12 [label=<tenure &le; 15.5<br/>entropy = 0.994<br/>samples = 1485<br/>value = [677, 808]<br/>class = churners>, fillcolor="#dfeffb"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.884<br/>samples = 718<br/>value = [217, 501]<br/>class = churners>, fillcolor="#8fc7f0"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.971<br/>samples = 767<br/>value = [460, 307]<br/>class = non-churners>, fillcolor="#f6d5bd"] ;
+12 -> 14 ;
+}
